@@ -98,7 +98,7 @@ export default function SideBar(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="ORGANIZATION"
+              children="SUBMISSIONS"
               {...getOverrideProps(overrides, "ORGANIZATION29767091")}
             ></Text>
             <Flex
@@ -168,8 +168,8 @@ export default function SideBar(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Lorem Ipsum"
-                {...getOverrideProps(overrides, "Lorem Ipsum29767095")}
+                children="Projects Management System"
+                {...getOverrideProps(overrides, "Projects Management System29767095")}
               ></Text>
             </Flex>
             <Flex
@@ -239,8 +239,8 @@ export default function SideBar(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Lorem Ipsum"
-                {...getOverrideProps(overrides, "Lorem Ipsum29767099")}
+                children="M-Pesa Stop Order"
+                {...getOverrideProps(overrides, "M-Pesa Stop Order29767099")}
               ></Text>
             </Flex>
           </Flex>
@@ -274,8 +274,8 @@ export default function SideBar(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="ORGANIZATION"
-              {...getOverrideProps(overrides, "ORGANIZATION29767101")}
+              children="PROGRAM BOARD"
+              {...getOverrideProps(overrides, "Departments29767101")}
             ></Text>
             <Flex
               gap="16px"
@@ -356,8 +356,8 @@ export default function SideBar(props) {
                   position="relative"
                   padding="0px 0px 0px 0px"
                   whiteSpace="pre-wrap"
-                  children="Lorem Ipsum"
-                  {...getOverrideProps(overrides, "Lorem Ipsum29767106")}
+                  children="M-Pesa"
+                  {...getOverrideProps(overrides, "<M-Pesa29767106")}
                 ></Text>
               </Flex>
               <Flex
@@ -427,8 +427,8 @@ export default function SideBar(props) {
                   position="relative"
                   padding="0px 0px 0px 0px"
                   whiteSpace="pre-wrap"
-                  children="Lorem Ipsum"
-                  {...getOverrideProps(overrides, "Lorem Ipsum29767110")}
+                  children="Enterprise Business Unit"
+                  {...getOverrideProps(overrides, "EBU29767110")}
                 ></Text>
               </Flex>
               <Flex
@@ -498,8 +498,8 @@ export default function SideBar(props) {
                   position="relative"
                   padding="0px 0px 0px 0px"
                   whiteSpace="pre-wrap"
-                  children="Lorem Ipsum"
-                  {...getOverrideProps(overrides, "Lorem Ipsum29767114")}
+                  children="HR"
+                  {...getOverrideProps(overrides, "HR29767114")}
                 ></Text>
               </Flex>
               <Flex
@@ -569,8 +569,8 @@ export default function SideBar(props) {
                   position="relative"
                   padding="0px 0px 0px 0px"
                   whiteSpace="pre-wrap"
-                  children="Lorem Ipsum"
-                  {...getOverrideProps(overrides, "Lorem Ipsum29767118")}
+                  children="COPs"
+                  {...getOverrideProps(overrides, "COPs29767118")}
                 ></Text>
               </Flex>
               <Flex
@@ -640,8 +640,8 @@ export default function SideBar(props) {
                   position="relative"
                   padding="0px 0px 0px 0px"
                   whiteSpace="pre-wrap"
-                  children="Lorem Ipsum"
-                  {...getOverrideProps(overrides, "Lorem Ipsum29767122")}
+                  children="CBU"
+                  {...getOverrideProps(overrides, "CBU29767122")}
                 ></Text>
               </Flex>
               <Flex
@@ -711,8 +711,8 @@ export default function SideBar(props) {
                   position="relative"
                   padding="0px 0px 0px 0px"
                   whiteSpace="pre-wrap"
-                  children="Lorem Ipsum"
-                  {...getOverrideProps(overrides, "Lorem Ipsum29767126")}
+                  children="CVM"
+                  {...getOverrideProps(overrides, "CVM29767126")}
                 ></Text>
               </Flex>
               <Flex
@@ -782,8 +782,8 @@ export default function SideBar(props) {
                   position="relative"
                   padding="0px 0px 0px 0px"
                   whiteSpace="pre-wrap"
-                  children="Lorem Ipsum"
-                  {...getOverrideProps(overrides, "Lorem Ipsum29767130")}
+                  children="LEGAL"
+                  {...getOverrideProps(overrides, "LEGAL29767130")}
                 ></Text>
               </Flex>
               <Flex
@@ -853,8 +853,8 @@ export default function SideBar(props) {
                   position="relative"
                   padding="0px 0px 0px 0px"
                   whiteSpace="pre-wrap"
-                  children="Lorem Ipsum"
-                  {...getOverrideProps(overrides, "Lorem Ipsum29767134")}
+                  children="TECHNOLOGY"
+                  {...getOverrideProps(overrides, "TECHNOLOGY29767134")}
                 ></Text>
               </Flex>
             </Flex>
@@ -958,8 +958,8 @@ export default function SideBar(props) {
                   position="relative"
                   padding="0px 0px 0px 0px"
                   whiteSpace="pre-wrap"
-                  children="Lorem Ipsum"
-                  {...getOverrideProps(overrides, "Lorem Ipsum29767141")}
+                  children="FINANCE"
+                  {...getOverrideProps(overrides, "FINANCE29767141")}
                 ></Text>
                 <Text
                   fontFamily="Inter"
