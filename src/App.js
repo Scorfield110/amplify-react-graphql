@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { API } from "aws-amplify";
+import { NavBar } from "./ui-components";
 import "@aws-amplify/ui-react/styles.css";
 import {
   withAuthenticator,
@@ -13,6 +14,7 @@ import {
   Flex,
   TextField,
   Text,
+ // components,
 } from "@aws-amplify/ui-react";
 
 //API
@@ -64,6 +66,7 @@ const App = ({ signOut }) => {
 
   return (
     <View className="App">
+      <NavBar />
       <Heading level={1}>Projects Management System</Heading>
       <View as="form" margin="3rem 0" onSubmit={createProject}>
         <Flex direction="row" justifyContent="center">

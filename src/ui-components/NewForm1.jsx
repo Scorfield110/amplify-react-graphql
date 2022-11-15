@@ -263,7 +263,7 @@ export default function NewForm1(props) {
         {...getOverrideProps(overrides, "Field5")}
       ></TextField>
       <TextField
-        label="Detailed Requirements"
+        label="User Requirements"
         onChange={(e) => {
           let { value } = e.target;
           if (onChange) {
