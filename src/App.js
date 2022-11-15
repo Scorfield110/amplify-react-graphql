@@ -67,9 +67,10 @@ const App = ({ signOut }) => {
 
   return (
     <View className="App">
-      <NavBar />
+      
     
       <Heading level={1}>Projects Management System</Heading>
+      <NavBar />
       <View as="form" margin="3rem 0" onSubmit={createProject}>
       <SideBar />
         <Flex direction="row" justifyContent="center">
