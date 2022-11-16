@@ -4,6 +4,9 @@ import "./App.css";
 import { API } from "aws-amplify";
 import { NavBar } from "./ui-components";
 import { SideBar } from "./ui-components";
+//import { ProductDetail } from "./ui-components";
+//import { StandardCard} from "./ui-components";
+//import { ProductCard} from "./ui-components";
 import "@aws-amplify/ui-react/styles.css";
 import {
   withAuthenticator,
@@ -45,6 +48,9 @@ const App = ({ signOut }) => {
       name: form.get("name"),
       employee: form.get("employee"),
       documents: form.get("documents"),
+      status: form.get("status"),
+      start_timestamp: form.get("start_timestamp"),
+      end_timestamp: form.get("end_timestamp"),
 
     };
     await API.graphql({
@@ -73,7 +79,18 @@ const App = ({ signOut }) => {
       <NavBar />
       <View as="form" margin="3rem 0" onSubmit={createProject}>
       <SideBar />
-        <Flex direction="row" justifyContent="center">
+      <Flex
+        gap="24px"
+        direction="row"
+        width="unset"
+        height="unset"
+        justifyContent="flex-start"
+        alignItems="center"
+        shrink="0"
+        //position="relative"
+        padding="0px 0px 0px 0px"
+       
+      >
           <TextField
             name="name"
             placeholder="Project Name"
@@ -94,6 +111,30 @@ const App = ({ signOut }) => {
             name="documents"
             placeholder="Project Documents"
             label="Project Documents"
+            labelHidden
+            variation="quiet"
+            required
+          />
+           <TextField
+            name="status"
+            placeholder="Project Status"
+            label="Project Status"
+            labelHidden
+            variation="quiet"
+            required
+          />
+           <TextField
+            name="start_date"
+            placeholder="Project start_date"
+            label="Project start_date"
+            labelHidden
+            variation="quiet"
+            required
+          />
+           <TextField
+            name="end_date"
+            placeholder="Project end_date"
+            label="Project end_date"
             labelHidden
             variation="quiet"
             required
@@ -122,7 +163,7 @@ const App = ({ signOut }) => {
             </Button>
           </Flex>
         ))}
-        
+    
       </View>
       <Button onClick={signOut}>Sign Out</Button>
     </View>
