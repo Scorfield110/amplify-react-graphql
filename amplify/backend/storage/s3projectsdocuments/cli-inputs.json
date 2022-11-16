@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3projectsdocuments",
+  "bucketName": "projectsdocuments",
+  "policyUUID": "44d0e572",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}
