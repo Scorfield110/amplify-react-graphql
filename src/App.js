@@ -2,8 +2,9 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { API } from "aws-amplify";
-import { NavBar } from "./ui-components";
-import { SideBar } from "./ui-components";
+import MainDash from './ui-components/MainDash/MainDash';
+import RightSide from './ui-components/RigtSide/RightSide';
+import Sidebar from './ui-components/Sidebar';
 //import { ProductDetail } from "./ui-components";
 //import { StandardCard} from "./ui-components";
 //import { ProductCard} from "./ui-components";
@@ -71,104 +72,15 @@ const App = ({ signOut }) => {
   }
 
 
-  return (
-    <View className="App">
-      
-    
-      <Heading level={1}>Projects Management System</Heading>
-      <NavBar />
-      <View as="form" margin="3rem 0" onSubmit={createProject}>
-      <SideBar />
-      <Flex
-        gap="24px"
-        direction="row"
-        width="unset"
-        height="unset"
-        justifyContent="flex-start"
-        alignItems="center"
-        shrink="0"
-        //position="relative"
-        padding="0px 0px 0px 0px"
-       
-      >
-          <TextField
-            name="name"
-            placeholder="Project Name"
-            label="Project Name"
-            labelHidden
-            variation="quiet"
-            required
-          />
-          <TextField
-            name="employee"
-            placeholder="Project Employee"
-            label="Project Employee"
-            labelHidden
-            variation="quiet"
-            required
-          />
-           <TextField
-            name="documents"
-            placeholder="Project Documents"
-            label="Project Documents"
-            labelHidden
-            variation="quiet"
-            required
-          />
-           <TextField
-            name="status"
-            placeholder="Project Status"
-            label="Project Status"
-            labelHidden
-            variation="quiet"
-            required
-          />
-           <TextField
-            name="start_date"
-            placeholder="Project start_date"
-            label="Project start_date"
-            labelHidden
-            variation="quiet"
-            required
-          />
-           <TextField
-            name="end_date"
-            placeholder="Project end_date"
-            label="Project end_date"
-            labelHidden
-            variation="quiet"
-            required
-          />
-          <Button type="submit" variation="primary">
-            Create Project
-          </Button>
-        </Flex>
-      </View>
-      <Heading level={2}>Current Projects</Heading>
-      <View margin="3rem 0">
-        {projects.map((project) => (
-          <Flex
-            key={project.id || project.name}
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-          >
-            <Text as="strong" fontWeight={700}>
-              {project.name}
-            </Text>
-            <Text as="span">{project.employee}</Text>
-            <Text as="span">{project.documents}</Text>
-            <Button variation="link" onClick={() => deleteProject(project)}>
-              Delete project
-            </Button>
-          </Flex>
-        ))}
-    
-      </View>
-      <Button onClick={signOut}>Sign Out</Button>
-    </View>
-    
+   return (
+    <div className="App">
+      <div className="AppGlass">
+        <Sidebar/>
+        <MainDash/>
+        <RightSide/>
+      </div>
+    </div>
   );
 
-};
+}
 export default withAuthenticator(App);
